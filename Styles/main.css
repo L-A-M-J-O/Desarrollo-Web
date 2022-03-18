@@ -5,6 +5,24 @@ body {
     box-sizing: border-box;
     font-family: 'Prompt', sans-serif;
 }
+.txt__one {
+    display: flex;
+    justify-content: center;
+}
+.txt__two {
+    display: flex;
+    width: 800px;
+    height: 300px;
+    margin: 0;
+    padding: 20px 
+}
+h3 {
+    font-size: 100px;
+    padding: 5px;
+    margin: 5px;
+    width: 400px;
+    height: 200px;
+}
 .logo {
     margin-left: 20px;
     padding: 5px;

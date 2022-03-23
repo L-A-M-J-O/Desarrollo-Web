@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../Styles/main.css">
+    <link rel="stylesheet" href="../scss/main.css">
     <link rel="icon" type="image/x-icon" href="../Img/Icon.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
@@ -21,35 +21,19 @@
     
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-light bg-light">
-            <a href="#" class="navbar-brand mb-0 h1">
-                <img class="logo d-inline-block align-top" src="../Img/Icon.png">
+    <section class="container">
+        <header class="d-flex flex wrap justify-content-center py-3 mb-4 border-bottom">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <span class="fs-4">¡Hello!</span>
             </a>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a href="file:///C:/Users/lamjo/OneDrive/Documents/Work_Coder/index.html#" class="nav-link">Home</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a href="file:///C:/Users/lamjo/OneDrive/Documents/Work_Coder/pages/Projects.html" class="nav-link">Projects</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a href="file:///C:/Users/lamjo/OneDrive/Documents/Work_Coder/pages/jobpost%20.html" class="nav-link">Jobpost</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a href="file:///C:/Users/lamjo/OneDrive/Documents/Work_Coder/pages/Ideas.html" class="nav-link">Ideas</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+            <ul class="nav nav-tabs">
+                <li class="nav-item"><a href="/index.html" class="nav-link active" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="./Projects.html" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="./jobpost.html" class="nav-link">Jobpost</a></li>
+                <li class="nav-item"><a href="./Ideas.html" class="nav-link">Ideas</a></li>
+            </ul> 
+        </header>
+    </section>
     <div class="modal-dialog text-center">
         <div class="col-sm-8 main-section">
             <div class="modal-content">
@@ -120,31 +104,32 @@
             </div>
         </div>
     </div> -->
-    <footer class="pie-pagina">
-        <div class="grupo-1">
-            <div class="box">
+    <div class="redes-container">
+        <div class="col-sm-3">
+            <h4>Sigueme</h4>
+        </div>
+        <ul>
+            <li> <a href="https://www.facebook.com/alan.naranjo.16/" class="facebook"><i class="fab fa-facebook"></i></a></li>
+            <li> <a href="https://www.instagram.com/a_lan_30/" class="instagram"><i class="fab fa-instagram"></i></a></li>
+            <li> <a href="https://twitter.com/LAMJO7" class="twitter"><i class="fab fa-twitter"></i></a></li>
+            <li> <a href="https://www.linkedin.com/in/alann3009200330092003/" class="linkedin"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+    </div>
+    <footer class="container caja">
+        <div class="row caja__2">
+            <div class="col-3">
                 <figure>
                     <a href="#">
-                        <img src="../Img/icon.png" alt="Logo">
+                        <img class="w-25 h-25 " src="./Img/icon.png" alt="Logo">
                     </a>
                 </figure>
             </div>
-            <div class="box">
+            <div class="col-6">
                 <h2>Me</h2>
                 <p>Levantándose de las cenizas que ventilan esas llamas parpadeantes. Me rearmaré convirtiéndome en la diosa de la llama.</p>
             </div>
-            <div class="box">
-                <h2>Sigueme</h2>
-                <div class="red-social">
-                    <i class='bx bxl-facebook-square'></i>
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-instagram"></a>
-                    <a href="#" class="fa fa-twitter"></a>
-                    <a href="#" class="fa fa-linkedin"></a>
-                </div>
-            </div>
         </div>
-        <div class="grupo-2">
+        <div class="row-cols-12 copy">
             <small>&copy; 2022 <b>Alan Naranjo</b> - Todos los Derechos Reservados.</small>
         </div>
     </footer>

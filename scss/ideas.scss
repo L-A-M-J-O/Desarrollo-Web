@@ -1,0 +1,98 @@
+$colorbg: rgba(192, 192, 192, 0.205);
+$colortext: rgb(223, 223, 223);
+$colortittle: #000000;
+$colorhe: #4f483d;
+
+:root{
+--facebook: #3b5999;
+--instagram: #e4405f;
+--twitter: #55caee;
+--linkedin: #004985;
+
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans Display', sans-serif;
+}
+header {
+
+    .nav-link {
+        color:$colorhe;
+    }
+}
+.img_icon {
+    width: 70px;
+    height: auto;
+}
+.caja {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: $colorbg;
+    height: 200px; 
+    
+    .caja__2 {
+        text-align: center;
+        align-items: center;
+
+        h4 {
+            font-size: 60px;
+        }
+    }
+}
+.redes-container {
+    display: flex;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+
+    & h4 {
+        display: flex;
+        justify-content: center;
+        font-size: 60px;
+
+    } ul li {
+        display: inline-block;
+        margin: 0 5px;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+
+        & a {
+            display: block;
+            padding: 0 10px;
+            background: #333;
+            color: rgb(255, 255, 255);
+            line-height: 50px;
+            font-size: 18px;
+            box-shadow: 0 3px 5px 0px rgba(0, 0, 0, .2);
+            transition: .2s;
+
+            & &:hover {
+                filter: blur(2px);
+
+                & & &:hover{
+                    transform: translateY(-3px) scale(1.05);
+                    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .4);
+                    filter: none;
+                }
+            }
+        }
+    }
+}
+.redes-container ul li .facebook:hover {
+    background: var(--facebook);
+}
+.redes-container ul li .instagram:hover {
+    background: var(--instagram);
+}
+.redes-container ul li .twitter:hover {
+    background: var(--twitter);
+}
+.redes-container ul li .linkedin:hover {
+    background: var(--linkedin);
+}
+  

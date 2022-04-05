@@ -1,1 +1,138 @@
-/* No CSS *//*# sourceMappingURL=jobpost.css.map */
+:root {
+  --facebook: #3b5999;
+  --instagram: #e4405f;
+  --twitter: #55caee;
+  --linkedin: #004985;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Noto Sans Display', sans-serif;
+}
+
+header .nav-link {
+  color: #4f483d;
+}
+
+.img_icon {
+  width: 70px;
+  height: auto;
+}
+
+.text_1 {
+  padding: 20px;
+  margin-top: 40px;
+  background: rgba(192, 192, 192, 0.205);
+}
+
+.text_2 {
+  padding: 20px;
+  margin-top: 10px;
+  background: rgba(192, 192, 192, 0.205);
+}
+
+.back {
+  margin-top: 100px;
+}
+
+.caja {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgba(192, 192, 192, 0.205);
+  height: 200px;
+}
+
+.caja .caja__2 {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.caja .caja__2 h4 {
+  font-size: 60px;
+}
+
+.redes-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 200px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.redes-container h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 60px;
+}
+
+.redes-container ul li {
+  display: inline-block;
+  margin: 0 5px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.redes-container ul li a {
+  display: block;
+  padding: 0 10px;
+  background: #333;
+  color: white;
+  line-height: 50px;
+  font-size: 18px;
+  -webkit-box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.redes-container ul li a .redes-container ul li a:hover {
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+
+.redes-container ul li a .redes-container ul li a:hover .redes-container ul li a .redes-container ul li a:hover .redes-container ul li a .redes-container ul li a:hover:hover {
+  -webkit-transform: translateY(-3px) scale(1.05);
+          transform: translateY(-3px) scale(1.05);
+  -webkit-box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
+  -webkit-filter: none;
+          filter: none;
+}
+
+.redes-container ul li .facebook:hover {
+  background: var(--facebook);
+}
+
+.redes-container ul li .instagram:hover {
+  background: var(--instagram);
+}
+
+.redes-container ul li .twitter:hover {
+  background: var(--twitter);
+}
+
+.redes-container ul li .linkedin:hover {
+  background: var(--linkedin);
+}
+/*# sourceMappingURL=jobpost.css.map */

@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../scss/main.css">
+    <link rel="stylesheet" href="../scss/Contact.css">
     <link rel="icon" type="image/x-icon" href="../Img/Icon.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
@@ -22,9 +22,10 @@
 </head>
 <body>
     <section class="container">
-        <header class="d-flex flex wrap justify-content-center py-3 mb-4 border-bottom">
+        <header class="d-flex flex wrap align-items-md-center py-3 mb-4 border-bottom">
             <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-                <span class="fs-4">¡Hello!</span>
+                <span class="fs-4">¡Hello!, User</span>
+                <img class="img_icon"src="/Img/icon.png">
             </a>
             <ul class="nav nav-tabs">
                 <li class="nav-item"><a href="/index.html" class="nav-link active" aria-current="page">Home</a></li>
@@ -38,26 +39,24 @@
         <div class="col-sm-8 main-section">
             <div class="modal-content">
                 <div class="col-12 user-img">
-                    <img src="../Img/Icon.png" th:src="@{/img/user.png}"/>
+                    <img class="w-25 h-25" src="../Img/Icon.png" th:src="@{/img/user.png}"/>
                 </div>
                 <form class="col-12" th:action="@{/login}" method="get">
                     <div class="form-group" id="user-group">
                         <input type="text" class="form-control" placeholder="Nombre de usuario" name="username"/>
                     </div>
+                    <br>
                     <div class="form-group" id="contrasena-group">
                         <input type="password" class="form-control" placeholder="Contrasena" name="password"/>
                     </div>
-                    <button type="submit" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i>  Ingresar </button>
+                    <br>
+                    <div class="form-range" id="text-center">
+                        <textarea name="texto" rows="1" cols="35" placeholder="Escriba algo"></textarea>
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i>  Contactarme </button>
+                    <br>
                 </form>
-                <div class="col-12 forgot">
-                    <a href="#">Recordar contrasena?</a>
-                </div>
-                <div th:if="${param.error}" class="alert alert-danger" role="alert">
-		            Invalid username and password.
-		        </div>
-		        <div th:if="${param.logout}" class="alert alert-success" role="alert">
-		            You have been logged out.
-		        </div>
             </div>
         </div>
     </div>
@@ -120,7 +119,7 @@
             <div class="col-3">
                 <figure>
                     <a href="#">
-                        <img class="w-25 h-25 " src="./Img/icon.png" alt="Logo">
+                        <img class="w-25 h-25 " src="../Img/icon.png" alt="Logo">
                     </a>
                 </figure>
             </div>

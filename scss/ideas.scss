@@ -27,6 +27,12 @@ header {
     width: 70px;
     height: auto;
 }
+button{
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background:#4f483d; 
+}
 .caja {
     display: flex;
     flex-wrap: wrap;
